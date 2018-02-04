@@ -1,0 +1,19 @@
+
+/* Colors:
+http://www.perbang.dk/rgb/863409/
+Backgrounds: #551900
+Background-Texts: #FF4C00
+Foregrounds: #0F0400
+Foreground-Texts: #A86345;
+*/
+
+body {
+  background-color: #551900;
+  color: #FF4C00;
+}
+
+.header {
+  background-color: #A86345;
+  color: #551900;
+  margin: 20;
+}
