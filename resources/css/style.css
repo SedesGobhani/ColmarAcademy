@@ -1,19 +1,50 @@
 
-/* Colors:
-http://www.perbang.dk/rgb/863409/
-Backgrounds: #551900
-Background-Texts: #FF4C00
-Foregrounds: #0F0400
-Foreground-Texts: #A86345;
-*/
+/*========= Color Scheme =========*/
 
-body {
-  background-color: #551900;
-  color: #FF4C00;
+:root {
+  --light-color: #E18209;
+  --medium-color: #A65305;
+  --dark-color: #3F2513;
 }
 
-.header {
-  background-color: #A86345;
-  color: #551900;
-  margin: 20;
+/* Background Colors */
+.bg-blk { background-color: black; }
+.bg-drk { background-color: var(--dark-color); }
+.bg-med { background-color: var(--medium-color); }
+.bg-lit { background-color: var(--light-color); }
+.bg-wht { background-color: white; }
+/* Foreground Colors */
+.fg-blk { color: black; }
+.fg-drk { color: var(--dark-color); }
+.fg-med { color: var(--medium-color); }
+.fg-lit { color: var(--light-color); }
+.fg-wht { color: white; }
+
+/*=== Unique Items ===*/
+
+nav {
+  color: yellow;
+}
+
+html {
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  background-color: black;
+}
+
+header {
+  padding: 10px;
+}
+
+nav {
+  color: inherit;
+}
+
+.mobile {
+  display: none;
+}
+
+.button h3 {
+  padding: 8px auto;
 }
