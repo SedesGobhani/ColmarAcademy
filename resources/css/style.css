@@ -1,7 +1,7 @@
 
 /*========= Color Scheme =========*/
 
-:root {
+:root { /* 3 colors for entire page */
   --light-color: #E18209;
   --medium-color: #A65305;
   --dark-color: #3F2513;
@@ -22,12 +22,8 @@
 
 /*=== Unique Items ===*/
 
-nav {
-  color: yellow;
-}
-
 html {
-  border-width: 5px;
+  border-width: 3px;
   border-style: solid;
   border-color: black;
   background-color: black;
@@ -35,16 +31,31 @@ html {
 
 header {
   padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav {
-  color: inherit;
+nav, .logo {
+  display: flex;
+  flex-directon: row;
+  justify-content: center;
+}
+
+nav span {
+  margin: 5px;  /* change later! */
 }
 
 .mobile {
   display: none;
 }
 
-.button h3 {
-  padding: 8px auto;
+.button h4 {
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 8px 0;
 }
+
+
+/* Media breaks down below 525 */
