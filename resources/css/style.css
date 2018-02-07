@@ -20,31 +20,49 @@
 .fg-lit { color: var(--light-color); }
 .fg-wht { color: white; }
 
-/*=== Unique Items ===*/
+/*=== General ===*/
 
 html {
-  background-color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 { font-size: 3rem }
+h2 { font-size: 2rem }
+h3 { font-size: 1.25rem }
+h4 { font-size: 0.75rem }
+
+h1, h2, h3, h4 {
+  font-family: cursive,serif;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+/*=== 1. HEADER ===*/
+
 header {
-  padding: 10px;
+  height: 64px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 
-nav, .logo {
+.logo, nav {
   display: flex;
-  flex-directon: row;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 0 20px;
 }
 
 .logo {
   height: 32px;
-  font-size: 25px
+  font-size: 25px;
 }
 
 .logo-text {
@@ -52,25 +70,78 @@ nav, .logo {
 }
 
 .logo-text span:nth-child(2) {
-  opacity: 0.5;
+  opacity: 0.4;
 }
-
 
 nav a {
   margin: 8px;
+  color: black;
   text-decoration: none;
-  color: inherit;
 }
 
-.mobile {
-  display: none;
+/*=== 2. INTRO ===*/
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  top: 64px; /* To offset for fixed header. */
 }
 
-.button h4 {
+
+.intro .col:nth-child(1) {
+  width: 60%;
+}
+
+/* .intro .col:nth-child(2) {
+} */
+
+.intro .col:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.intro .text-box {
+  max-width: 18rem;
+}
+
+.intro .big-pic {
+  /* width: 60%; */
+  margin: 32px 24px;
+}
+
+.intro img {
+  width: 100%;
+}
+
+.intro h2, .intro h4 {
+  padding-bottom: 1rem;
+}
+
+.button {
+  padding: 8px;
+  text-align: center;
   font-size: 18px;
-  font-family: sans-serif;
-  padding: 8px 0;
 }
+
+/*=== 3. INFO ===*/
+.info h2, .intro p {
+  padding-bottom: 1rem;
+}
+
+/*=== 4. PRODUCTS ===*/
+
+/*=== 5. EXHIBIT ===*/
+
+/*=== 6. FOOTER ===*/
 
 
 /* Media breaks down below 525 */
+
+.mobile { /* Change this to a media width selector */
+  display: none;
+}
