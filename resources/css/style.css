@@ -27,7 +27,7 @@ html {
 }
 
 h1 { font-size: 3rem }
-h2 { font-size: 2rem }
+h2 { font-size: 1.75rem }
 h3 { font-size: 1.25rem }
 h4 { font-size: 0.75rem }
 
@@ -42,14 +42,14 @@ p {
 /*=== 1. HEADER ===*/
 
 header {
+  position: fixed;
   height: 64px;
+  z-index: 5;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  width: 100%;
-  z-index: 5;
 }
 
 .logo, nav {
@@ -79,61 +79,120 @@ nav a {
   text-decoration: none;
 }
 
+/*=== EVERYTHING ELSE ===*/
+
+.scrollable {
+  position: relative;
+  top: 64px;
+}
+
 /*=== 2. INTRO ===*/
 
 .intro {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  position: relative;
-  top: 64px; /* To offset for fixed header. */
+  padding: 32px 24px;
 }
 
-
-.intro .col:nth-child(1) {
+.intro .col1 {
   width: 60%;
-}
-
-/* .intro .col:nth-child(2) {
-} */
-
-.intro .col:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-}
-
-.intro .text-box {
-  max-width: 18rem;
-}
-
-.intro .big-pic {
-  /* width: 60%; */
-  margin: 32px 24px;
+  margin-right: 24px;
 }
 
 .intro img {
   width: 100%;
 }
 
-.intro h2, .intro h4 {
-  padding-bottom: 1rem;
+.intro .col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 35%;
+}
+
+.intro .col2 *  {
+  margin: 10px 0px;
 }
 
 .button {
+  width: 100%;
   padding: 8px;
   text-align: center;
   font-size: 18px;
 }
 
+
 /*=== 3. INFO ===*/
-.info h2, .intro p {
-  padding-bottom: 1rem;
+
+
+
+.intro .col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 35%;
 }
 
+
+.info {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.info .col1 {
+  width: 60%;
+  margin-right: 24px;
+}
+
+.info img {
+  width: 100%;
+}
+
+.info .col2 {
+  width: 35%;
+  /* width: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .col2 .info-box {
+  padding: 16px;
+  margin: 1px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  /* border: 1px solid black; */
+}
+
+.info .col2 .info-box:last-child {
+  background-color: var(--medium-color);
+}
+
+.info .col2 .info-box .small-pic {
+  width: 35%;
+  min-width: 35%;
+}
+
+.info .col2 .info-box .small-pic img {
+  width: 100%;
+}
+
+.info .col2 .info-box .info-text {
+  text-align: center;
+}
+
+
 /*=== 4. PRODUCTS ===*/
+
+
 
 /*=== 5. EXHIBIT ===*/
 
