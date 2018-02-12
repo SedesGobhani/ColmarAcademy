@@ -2,9 +2,13 @@
 /*========= Color Scheme =========*/
 
 :root { /* 3 colors for entire page */
-  --light-color: #E18209;
+  /* --light-color: #E18209;
   --medium-color: #A65305;
-  --dark-color: #3F2513;
+  --dark-color: #3F2513; */
+
+  --light-color: #518FCA;
+  --medium-color: #633D70;
+  --dark-color: #2A0B44;
 }
 
 /* Background Colors */
@@ -170,8 +174,17 @@ nav a {
   border: 1px solid var(--medium-color);
 }
 
-.info .info-box:nth-child(2n+1) {
+.info-box,
+.info-box a {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+
+.info-box:nth-child(2n+1),
+.info-box:nth-child(2n+1) a {
   background-color: var(--medium-color);
+  color:  var(--light-color);
 }
 
 .info-box .small-pic {
