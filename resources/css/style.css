@@ -79,7 +79,7 @@ nav a {
   margin: 8px;
   color: black;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /*=== EVERYTHING ELSE ===*/
@@ -162,33 +162,15 @@ nav a {
   width: 100%;
 }
 
-
-/* Somewhere below this line is very broken */
-
-.info .col2 .info-box {
+.info .info-box {
 
   display: flex;
   flex-direction: row;
-
-
-/*
-  padding: 16px;
-  margin-bottom: -1px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
   width: 100%;
-  height: 200px;
-*/
-width: 100%;
-border: 1px solid var(--medium-color);
-
+  border: 1px solid var(--medium-color);
 }
 
-
-
-.info .col2 .info-box:nth-child(2n+1) {
+.info .info-box:nth-child(2n+1) {
   background-color: var(--medium-color);
 }
 
@@ -265,13 +247,75 @@ border: 1px solid var(--medium-color);
 
 
 
-/*=== 5. EXHIBIT ===*/
+/*=== 5. THESIS ===*/
+
+.thesis-div {
+  padding: 32px 24px;
+}
+
+.thesis-banner h2 {
+  margin-bottom: 32px;
+  width: 100%;
+  text-align: center;
+}
+
+.thesis-showcase {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.thesis-showcase .col1 {
+  max-width: 55%;
+  min-width: 55%;
+  margin-right: 24px;
+}
+
+.thesis-showcase video {
+  width: 100%;
+}
+
+.thesis-showcase .col1 * {
+  margin-bottom: 20px;
+}
+
+.thesis-showcase .info-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid var(--medium-color);
+}
+
+.thesis-showcase .info-box:nth-child(2n+1) {
+  background-color: var(--medium-color);
+}
+
+.thesis-showcase img {
+  width: 100%;
+}
+
 
 /*=== 6. FOOTER ===*/
+
+.footer {
+  border-top: 1px solid var(--medium-color);
+  padding: 16px 24px;
+  height: 50px; /* random */
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.btm-nav a {
+  margin-left: 8px;
+}
 
 
 /* Media breaks down below 525 */
 
 .mobile { /* Change this to a media width selector */
   display: none;
+
 }
