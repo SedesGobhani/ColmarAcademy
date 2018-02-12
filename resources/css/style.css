@@ -13,6 +13,7 @@
 .bg-med { background-color: var(--medium-color); }
 .bg-lit { background-color: var(--light-color); }
 .bg-wht { background-color: white; }
+
 /* Foreground Colors */
 .fg-blk { color: black; }
 .fg-drk { color: var(--dark-color); }
@@ -24,6 +25,7 @@
 
 html {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 h1 { font-size: 3rem }
@@ -77,6 +79,7 @@ nav a {
   margin: 8px;
   color: black;
   text-decoration: none;
+  font-size: 14px;
 }
 
 /*=== EVERYTHING ELSE ===*/
@@ -89,14 +92,16 @@ nav a {
 /*=== 2. INTRO ===*/
 
 .intro {
+  margin: 0px;
+  padding: 32px 32px 32px 24px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 32px 24px;
 }
 
 .intro .col1 {
-  width: 60%;
+  max-width: 55%;
+  min-width: 55%;
   margin-right: 24px;
 }
 
@@ -109,7 +114,8 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 35%;
+  /* width: auto; */
+  width: 25%;
 }
 
 .intro .col2 *  {
@@ -126,26 +132,17 @@ nav a {
 
 /*=== 3. INFO ===*/
 
-
-
-.intro .col2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 35%;
-}
-
-
 .info {
-  padding: 32px 24px;
+  margin: 0px;
+  padding: 32px 32px 32px 24px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
 .info .col1 {
-  width: 60%;
+  max-width: 55%;
+  min-width: 55%;
   margin-right: 24px;
 }
 
@@ -153,44 +150,118 @@ nav a {
   width: 100%;
 }
 
+.info .col1 * {
+  margin-bottom: 20px;
+}
+
 .info .col2 {
-  width: 35%;
-  /* width: auto; */
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* Somewhere below this line is very broken */
+
+.info .col2 .info-box {
+
+  display: flex;
+  flex-direction: row;
+
+
+/*
+  padding: 16px;
+  margin-bottom: -1px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  height: 200px;
+*/
+width: 100%;
+border: 1px solid var(--medium-color);
+
+}
+
+
+
+.info .col2 .info-box:nth-child(2n+1) {
+  background-color: var(--medium-color);
+}
+
+.info-box .small-pic {
+  max-width: 35%;
+  min-width: 35%;
+  margin: 16px;
+}
+
+
+.info-text-div {
+  /* text-align: center;
+  max-width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-text-div * {
+  margin-bottom: 8px;
+}
+
+
+/*=== 4. OFFERINGS ===*/
+
+.offerings {
+  padding: 32px 72px;
+}
+
+.offerings h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.courses-box {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.info .col2 .info-box {
-  padding: 16px;
-  margin: 1px 0px;
+.course-box {
+  margin: 16px 16px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
-  /* border: 1px solid black; */
+  width: 300px;
+  height: 375px;
 }
 
-.info .col2 .info-box:last-child {
-  background-color: var(--medium-color);
-}
-
-.info .col2 .info-box .small-pic {
-  width: 35%;
-  min-width: 35%;
-}
-
-.info .col2 .info-box .small-pic img {
+.course-box img.desktop {
   width: 100%;
+  margin-bottom: 8px;
 }
 
-.info .col2 .info-box .info-text {
-  text-align: center;
+.course-box h3 {
+  margin: 8px 16px;
+  text-align: left;
+  float: left;
+  width: 100%
 }
 
+.course-box p {
+  margin: 8px 16px;
+  float: left;
+  width: 100%
+}
 
-/*=== 4. PRODUCTS ===*/
+.course-box p:last-child {
+  margin-bottom: 24px;
+}
 
 
 
