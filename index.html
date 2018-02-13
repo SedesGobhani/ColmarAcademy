@@ -6,7 +6,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="./resources/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./resources/css/font-awesome.css"> -->
   </head>
 
   <body class="bg-blk fg-med"> <!-- defaults -->
@@ -15,7 +15,7 @@
     <header class="bg-lit fg-blk">
       <div class="logo">
         <img src="./resources/images/ic-logo.svg" alt="">
-          <div class="logo-text">
+          <div class="logo-text desktop">
             <span>COLMAR</span><span>ACADEMY</span>
           </div>
       </div>
@@ -42,9 +42,9 @@
         </div>
         <div class="col2">
           <h2>Learn something new everyday</h2>
-          <p>Enjoy studying under shady oaks of our peaceful, warm outdoor classrooms!</p>
+          <p>Enjoy studying under shady oaks of our soothing, peaceful outdoor classrooms!</p>
           <div class="button bg-lit fg-drk">
-            <span>Start here!</span>
+            <a href="#">Start here!</a>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@
       <!-- 3. INFO -->
       <div class="info section bg-med fg-lit">
 
-        <div class="col col1">
+        <div class="col col1 desktop">
           <img src="./resources/images/information-main.jpg" alt="">
           <h2>It doesn't hurt to keep practicing!</h2>
           <div class="quote">
@@ -113,8 +113,8 @@
             <img src="./resources/images/course-software.jpg" alt="" class="desktop">
             <div class="info-text">
               <h3>Software engineering</h3>
-              <p>COURSES</p>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
+              <p class="desktop">COURSES</p>
+              <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
             </div>
           </div>
 
@@ -122,8 +122,8 @@
             <img src="./resources/images/course-computer-art.jpg" alt="" class="desktop">
             <div class="info-text">
               <h3>Computer art</h3>
-              <p>COURSES</p>
-              <p>Imaging and Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+              <p class="desktop">COURSES</p>
+              <p class="desktop">Imaging and Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
             </div>
           </div>
 
@@ -131,8 +131,8 @@
             <img src="./resources/images/course-design.jpg" alt="" class="desktop">
             <div class="info-text">
               <h3>Design</h3>
-              <p>COURSES</p>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
+              <p class="desktop">COURSES</p>
+              <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
             </div>
           </div>
 
@@ -140,8 +140,8 @@
             <img src="./resources/images/course-data.jpg" alt="" class="desktop">
             <div class="info-text">
               <h3>Data</h3>
-              <p>COURSES</p>
-              <p>Data Science, Big Data, SQL, Data Visualization</p>
+              <p class="desktop">COURSES</p>
+              <p class="desktop">Data Science, Big Data, SQL, Data Visualization</p>
             </div>
           </div>
 
@@ -149,8 +149,8 @@
             <img src="./resources/images/course-business.jpg" alt="" class="desktop">
             <div class="info-text">
               <h3>Business</h3>
-              <p>COURSES</p>
-              <p>Product Development, Business Development, Startup</p>
+              <p class="desktop">COURSES</p>
+              <p class="desktop">Product Development, Business Development, Startup</p>
             </div>
           </div>
 
@@ -158,8 +158,8 @@
             <img src="./resources/images/course-marketing.jpg" alt="" class="desktop">
             <div class="info-text">
               <h3>Marketing</h3>
-              <p>COURSES</p>
-              <p>Analytics, Content Marketing, Mobile Marketing</p>
+              <p class="desktop">COURSES</p>
+              <p class="desktop">Analytics, Content Marketing, Mobile Marketing</p>
             </div>
           </div>
 
@@ -173,17 +173,18 @@
       <div class="thesis-div section bg-med fg-lit">
 
         <div class="thesis-banner">
-          <h2>Thesis Exhibit</h2>
+          <h2>Thesis Exhibits</h2>
         </div>
 
         <div class="thesis-showcase">
           <div class="col1">
-            <video src="./resources/videos/thesis.mp4" alt="Short video clip of modern building" autoplay></video>
-            <h3>Reimagine urban</h3>
-            <p>"If you can dream it, you can be it. So dream big.  Sweet dreams till sunbeams find you. Sweet dreams that leave all worries behind you. But in your dreams whatever they be, Dream a little dream of me. Or don't - it's entirely up to you!"</p>
+            <video src="resources/videos/thesis.mp4" autoplay loop>
+					</video>
+            <h3 class="desktop">Reimagine urban</h3>
+            <p class="desktop">"If you can dream it, you can be it. So dream big.  Sweet dreams till sunbeams find you. Sweet dreams that leave all worries behind you. But in your dreams whatever they be, Dream a little dream of me. Or don't - it's entirely up to you!"</p>
           </div>
 
-          <div class="col2">
+          <div class="col2 desktop">
 
             <div class="info-box">
               <div class="small-pic">
@@ -209,18 +210,15 @@
 
         </div>
 
-
-
       </div>
 
 
       <!-- 6. FOOTER -->
-      <div class="footer section bg-lit fg-drk">
+      <div class="footer section bg-lit fg-blk">
         <div class="copyright">
           © 2016 Colmar Academy. All rights reserved.
         </div>
-        <!-- <img src="./resources/images/inspirational_flower.jpg" id="flower"> -->
-        <div class="btm-nav">
+        <div class="btm-nav desktop">
           <a href="#">Terms</a>
           <a href="#">Privacy</a>
         </div>
